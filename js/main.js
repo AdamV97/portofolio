@@ -42,5 +42,19 @@ $('#linkedin').click(function(){
   window.open('https://www.linkedin.com/in/adam-vukeli%C4%87-1b1932176/', '_blank');
 });
 
+$('#mail').click(function(){
+  document.getElementById("myModal").style.display = "block";
+})
+
+$('#close_modal').click(function(){
+  document.getElementById("myModal").style.display = "none";
+})
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById("myModal")) {
+    modal.style.display = "none";
+  }
+}
+
 //***********************************************************************************************************
 onInit();

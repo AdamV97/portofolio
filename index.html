@@ -9,8 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -23,6 +25,34 @@
         <a href="#contact"><button class="nav_bar_buttons">Contact</button></a>
       </div>
     </nav> -->
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div>
+        <span class="close" id="close_modal"><i class="fa fa-times-circle"></i></span>
+      </div>
+      <div>
+        <label>Name</label>
+        <input>
+      </div>
+      <div>
+        <label>Email</label>
+        <input>
+      </div>
+      <div>
+        <label>Subject</label>
+        <input>
+      </div>
+      <div>
+        <label>Message</label>
+        <input>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </div>
+  </div>
+
   <div class="main">
     <div class="main_headline">
       <h1>Adam Vukelić</h1>
@@ -34,7 +64,12 @@
       <div class="sections">
         <p>About me</p>
         <div class="europass_section section_default">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
       </div>
 
@@ -58,7 +93,9 @@
         <p>Examples(Try it)</p>
         <div class="example_section section_default">
           <ul class="skillset_list">
-            <a href="./pages/infinite_background.html" id="infinite_background"><li>Infinite space background</li></a>
+            <a href="./pages/infinite_background.html" id="infinite_background">
+              <li>Infinite space background</li>
+            </a>
           </ul>
         </div>
       </div>
