@@ -43,18 +43,41 @@ $('#linkedin').click(function(){
 });
 
 $('#mail').click(function(){
-  document.getElementById("myModal").style.display = "block";
+  document.getElementById("myModal").style.visibility = "visible";
+  $('#myModal').css("opacity", "1");
 })
 
-$('#close_modal').click(function(){
-  document.getElementById("myModal").style.display = "none";
+$('#modal_exit').click(function(){
+  document.getElementById("myModal").style.visibility = "hidden";
+  $('#myModal').css("opacity", "0");
 })
 
 window.onclick = function(event) {
   if (event.target == document.getElementById("myModal")) {
-    modal.style.display = "none";
+    document.getElementById("myModal").style.visibility = "hidden";
+    $('#myModal').css("opacity", "0");
   }
 }
+
+$('#submit_email').click(function(){
+  var email_object = {};
+
+  email_object.name = $('#name').val();
+  email_object.email = $('#email').val();
+  email_object.subject = $('#subject').val();
+  email_object.message = $('#message').text();
+
+  $.ajax({
+    url: './php/email.php',
+    data: {
+      object : email_object
+    },
+    type: 'POST',
+
+  }).done(function(message){
+    console.log(message);
+  })
+})
 
 //***********************************************************************************************************
 onInit();

@@ -109,6 +109,41 @@ h1 {
   color: rgb(114, 114, 114);
 }
 
+.main_input{
+  margin: 15px;
+  border-radius: 4px;
+  width: 80%;
+  height: 20px;
+}
+
+.main_input_textarea{
+  margin: 15px;
+  border-radius: 4px;
+  width: 80%;
+  resize: none;
+}
+
+.main_button{
+border: none;
+width: 90px;
+height: 36px;
+background-color: rgb(221, 221, 221);
+border-radius: 4px;
+}
+
+.main_button:hover{
+  cursor: pointer;
+  background-color: rgba(161, 161, 161, 0.8);
+  }
+
+.modal_section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 @media(max-width:1168px){
   .section_holder{
     flex-direction: column;
@@ -126,6 +161,8 @@ h1 {
     height: 700px;
   }
 }
+
+
 /* .main_buttons{
   justify-content: space-evenly;
 } */

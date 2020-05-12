@@ -28,27 +28,25 @@
 
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <div>
-        <span class="close" id="close_modal"><i class="fa fa-times-circle"></i></span>
-      </div>
-      <div>
+      <div class="modal_section">
         <label>Name</label>
-        <input>
+        <input id="name" class="main_input" placeholder="Yes, your name">
       </div>
-      <div>
+      <div class="modal_section">
         <label>Email</label>
-        <input>
+        <input id="email" class="main_input" placeholder="Yes, your email so I can contact you">
       </div>
-      <div>
+      <div class="modal_section">
         <label>Subject</label>
-        <input>
+        <input id="subject" class="main_input">
       </div>
-      <div>
+      <div class="modal_section">
         <label>Message</label>
-        <input>
+        <textarea id="message" cols="30" rows="15" class="main_input_textarea"></textarea>
       </div>
-      <div>
-        <button>Submit</button>
+      <div class="modal_section">
+        <button class="main_button" id="submit_email">Submit</button>
+        <button class="main_button" id="modal_exit">Cancel</button>
       </div>
     </div>
   </div>
